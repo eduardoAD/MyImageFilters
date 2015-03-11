@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface MyImageFilters : NSObject
+
+@property (nonatomic,readonly) UIImage *originalImage;
+
+- (id)initWithImage:(UIImage *)image;
+- (UIImage *)grayScaleImage;
+- (UIImage *)oldImageWithIntensity:(CGFloat)level;
 
 @end
